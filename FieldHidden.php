@@ -51,7 +51,7 @@ class FieldHidden extends FormField {
 		if ($this->isArray && is_array($value)) {
 			return implode($this->delimiter, $value);
 		}
-		return $value;
+		return $value ?? '';
 	}
 
 	/**
